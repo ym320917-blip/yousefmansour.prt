@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yousef Mansour Emam | Data Scientist & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Yousef Mansour Emam — Junior Data Scientist & Machine Learning Engineer with practical experience in end-to-end ML pipelines, e-commerce data analytics, and expanding into AI Engineering.">
+  <meta name="keywords" content="Yousef Mansour Emam, Data Scientist, Machine Learning Engineer, AI Engineering, Python, Scikit-learn, Streamlit, Cairo Egypt">
+  <meta name="author" content="Yousef Mansour Emam">
+  
+  <!-- Favicon & Canonical -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://ym320917-blip.github.io/">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ym320917-blip.github.io/">
+  <meta property="og:title" content="Yousef Mansour Emam | Data Scientist & Machine Learning Engineer">
+  <meta property="og:description" content="Building practical machine learning solutions from exploratory data analysis to deployed models, with e-commerce business insight and progression into AI Engineering.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Canvas Background for Hero & Atmosphere -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Yousef Mansour Emam Home">
+        <span class="logo-mark">YM</span>
+        <span class="logo-text">Yousef<span>.AI</span></span>
+      </a>
+
+      <!-- Recruiter Available Indicator -->
+      <div class="status-indicator-pill" title="Currently open to Data Science & ML opportunities">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Available for Opportunities</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="nav-menu" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#roadmap" class="nav-link">Roadmap</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- 15-Second Recruiter Overview Button -->
+        <button class="btn btn-scan" id="btn-open-scan" title="View 15-second summary for hiring managers">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h5l2 8 4-16 3 8h6"/></svg>
+          <span>Recruiter Scan</span>
+        </button>
+
+        <!-- CV Actions Dropdown / Direct Download -->
+        <div class="cv-dropdown-wrapper">
+          <a href="Yousef_Mansour_Emam_CV_revised.docx" download="Yousef_Mansour_Emam_CV.docx" class="btn btn-outline cv-btn" id="nav-cv-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>CV (.docx)</span>
+          </a>
+          <a href="cv.html" target="_blank" class="btn btn-secondary cv-view-btn" title="View & Print ATS-Optimized CV">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <span>View CV</span>
+          </a>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Color Theme" title="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Location & Focus Badge -->
+          <div class="hero-badge">
+            <span class="location-pin">📍</span>
+            <span>El Haram, Giza, Egypt</span>
+            <span class="badge-separator">•</span>
+            <span class="badge-tag">End-to-End ML</span>
+            <span class="badge-separator">•</span>
+            <span class="badge-tag">E-commerce Analytics</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="hero-title">
+            <span class="greeting-pre">Hello, I'm</span>
+            <span class="name-highlight">Yousef Mansour Emam</span>
+          </h1>
+
+          <!-- Professional Subtitle -->
+          <div class="hero-subheadline">
+            <span class="title-role">Data Scientist</span>
+            <span class="title-divider">|</span>
+            <span class="title-role">Machine Learning Engineer</span>
+          </div>
+
+          <!-- Supporting Text -->
+          <p class="hero-supporting-text">
+            Building practical machine learning solutions from data exploration and feature engineering to model development, evaluation, and deployment — while expanding into Deep Learning, NLP, Computer Vision, Generative AI, and AI Engineering.
+          </p>
+
+          <!-- Core Value Metrics / Pillars (Honest & Grounded) -->
+          <div class="hero-pillars">
+            <div class="pillar-item">
+              <span class="pillar-label">Core Focus</span>
+              <span class="pillar-value">Hands-On ML Pipelines</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-label">Unique Edge</span>
+              <span class="pillar-value">Technical + Business Insight</span>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-label">Target Direction</span>
+              <span class="pillar-value">Transitioning to AI Engineering</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary btn-glow" id="hero-cta-projects">
+              <span>View My Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="Yousef_Mansour_Emam_CV_revised.docx" download="Yousef_Mansour_Emam_CV.docx" class="btn btn-outline" id="hero-cta-cv">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download CV</span>
+            </a>
+            <a href="https://github.com/ym320917-blip" class="btn btn-secondary github-link-btn" id="hero-cta-github" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span class="gh-btn-label">GitHub</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary linkedin-link-btn" id="hero-cta-linkedin" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span class="li-btn-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Interactive End-to-End ML Pipeline Flow -->
+        <div class="hero-pipeline-card">
+          <div class="card-header-bar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="card-title-code">pipeline_architecture.py</div>
+            <div class="pipeline-live-tag">End-to-End ML</div>
+          </div>
+          
+          <div class="pipeline-flow-diagram">
+            <div class="flow-step" data-step="1">
+              <div class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <div class="step-info">
+                <span class="step-num">Step 01</span>
+                <span class="step-name">Raw Data & EDA</span>
+                <span class="step-detail">Pandas, NumPy, Distributions</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <div class="flow-step" data-step="2">
+              <div class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="step-info">
+                <span class="step-num">Step 02</span>
+                <span class="step-name">Feature Engineering</span>
+                <span class="step-detail">Encoding, Scaling, Transformations</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <div class="flow-step" data-step="3">
+              <div class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <div class="step-info">
+                <span class="step-num">Step 03</span>
+                <span class="step-name">Model Selection & Tuning</span>
+                <span class="step-detail">Algorithms, Cross-Validation, Tuning</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <div class="flow-step active-flow" data-step="4">
+              <div class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </div>
+              <div class="step-info">
+                <span class="step-num">Step 04</span>
+                <span class="step-name">Deployment & Inference</span>
+                <span class="step-detail">Streamlit UI & Practical Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pipeline-code-preview">
+            <code><span class="code-comment"># Practical execution logic</span><br>
+            pipeline = Pipeline([<br>
+            &nbsp;&nbsp;('prep', ColumnTransformer(...)),<br>
+            &nbsp;&nbsp;('model', BestTunedEstimator())<br>
+            ])<br>
+            predictions = pipeline.predict(X_new)</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">The Intersection of Real Business & Machine Learning</h2>
+          <p class="section-subtitle">Combining 3 years of hands-on e-commerce business operations with rigorous data science training and forward momentum into AI Engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card -->
+          <div class="about-card story-card">
+            <div class="card-badge">Background & Transition</div>
+            <h3>From E-commerce Ownership to Machine Learning</h3>
+            <p>
+              I studied <strong>Management and Information Systems</strong> at Modern Academy, gaining a dual understanding of organizational structures and technical architectures. During that period and beyond, I founded and managed an e-commerce business, <strong>Kaidoo.eg</strong>, for approximately three years.
+            </p>
+            <p>
+              Managing a commercial brand from the ground up immersed me in real-world challenges: order fulfillment flows, inventory management, digital customer acquisition, marketing ROAS, and customer sentiment. Analyzing customer patterns and order operations sparked my deep commitment to <strong>Data Science and Artificial Intelligence</strong>.
+            </p>
+            <p>
+              I transitioned into Data Science to solve these exact problems using mathematical models, data pipelines, and machine learning algorithms. I am not an academic theorist; I build <strong>practical, reproducible, end-to-end ML pipelines</strong> that address concrete business challenges.
+            </p>
+
+            <div class="progression-pill-chain">
+              <span class="chain-step">E-commerce Ops</span>
+              <span class="chain-arrow">→</span>
+              <span class="chain-step">Data Science</span>
+              <span class="chain-arrow">→</span>
+              <span class="chain-step">Machine Learning</span>
+              <span class="chain-arrow">→</span>
+              <span class="chain-step active-chain">AI Engineering</span>
+            </div>
+          </div>
+
+          <!-- Dual Advantage Bento Cards -->
+          <div class="about-dual-column">
+            <!-- Business Value Card -->
+            <div class="about-card advantage-card">
+              <div class="advantage-icon business-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7.5" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+              </div>
+              <h4>Business Understanding</h4>
+              <p>Direct experience with operations, fulfillment costs, customer service friction, customer acquisition, and marketing dynamics. I understand why models are built and how they affect the bottom line.</p>
+              <ul class="advantage-list">
+                <li>Operations & fulfillment logistics</li>
+                <li>Customer retention & sentiment analysis</li>
+                <li>E-commerce KPIs & unit economics</li>
+              </ul>
+            </div>
+
+            <!-- Technical Rigor Card -->
+            <div class="about-card advantage-card">
+              <div class="advantage-icon tech-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <h4>Technical Execution</h4>
+              <p>Hands-on proficiency transforming messy, raw tabular data into tuned predictive pipelines using modern Python data science libraries and clean engineering practices.</p>
+              <ul class="advantage-list">
+                <li>End-to-end data preprocessing & EDA</li>
+                <li>Feature engineering & hyperparameter tuning</li>
+                <li>Model evaluation & Streamlit deployment</li>
+              </ul>
+            </div>
+
+            <!-- Honest Professional Skills Card -->
+            <div class="about-card advantage-card skills-mini-card">
+              <h4>Core Professional Mindset</h4>
+              <div class="soft-skills-tags">
+                <span class="soft-tag">Problem Solving</span>
+                <span class="soft-tag">Analytical Thinking</span>
+                <span class="soft-tag">Data-Driven Decision Making</span>
+                <span class="soft-tag">Continuous Progression</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">End-to-End Machine Learning Projects</h2>
+          <p class="section-subtitle">Real-world problem formulations, structured feature engineering, rigorous model comparisons, and interactive deployments.</p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Amazon E-commerce Order Status Prediction -->
+          <article class="project-card" data-project="amazon-order">
+            <div class="project-card-header">
+              <div class="project-badge-row">
+                <span class="project-cat-badge">E-commerce ML</span>
+                <span class="project-status-badge">End-to-End Pipeline</span>
+              </div>
+              <h3 class="project-title">Amazon E-commerce Order Status Prediction</h3>
+              <p class="project-tagline">Predicting order lifecycle status to proactively reduce fulfillment bottlenecks, manage returns, and improve operational transparency.</p>
+            </div>
+
+            <!-- Business Problem Callout -->
+            <div class="project-business-box">
+              <div class="box-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Business Problem</span>
+              </div>
+              <p>E-commerce platforms face severe operational costs and customer dissatisfaction from delayed, returned, or cancelled orders. Anticipating the eventual status of an order enables proactive inventory and logistics adjustments.</p>
+            </div>
+
+            <!-- Technical Pipeline Stages -->
+            <div class="project-workflow-summary">
+              <div class="workflow-title">Technical Workflow:</div>
+              <div class="workflow-tags-grid">
+                <span class="wf-pill">Data Preprocessing</span>
+                <span class="wf-pill">Exploratory Data Analysis</span>
+                <span class="wf-pill">Feature Engineering</span>
+                <span class="wf-pill">Feature Transformation</span>
+                <span class="wf-pill">Model Comparison</span>
+                <span class="wf-pill">Hyperparameter Tuning</span>
+                <span class="wf-pill">Model Evaluation</span>
+                <span class="wf-pill">Streamlit Deployment</span>
+              </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm btn-open-modal" data-modal="amazon-order">
+                <span>View Project Details</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </button>
+              <div class="external-links-row">
+                <a href="#contact" class="btn btn-outline btn-sm gh-link-anchor" title="View Code Repository" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm demo-link-anchor" title="Launch Streamlit Live App" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: E-commerce Customer Satisfaction Prediction -->
+          <article class="project-card" data-project="customer-satisfaction">
+            <div class="project-card-header">
+              <div class="project-badge-row">
+                <span class="project-cat-badge">Customer Analytics</span>
+                <span class="project-status-badge">End-to-End Solution</span>
+              </div>
+              <h3 class="project-title">E-commerce Customer Satisfaction Prediction</h3>
+              <p class="project-tagline">Classifying customer sentiment and review satisfaction to empower support teams to intervene before negative reviews impact the brand.</p>
+            </div>
+
+            <!-- Business Problem Callout -->
+            <div class="project-business-box">
+              <div class="box-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Business Problem</span>
+              </div>
+              <p>Customer retention in competitive e-commerce markets hinges on immediate post-purchase satisfaction. Detecting signals of dissatisfaction enables automated prioritization for support teams.</p>
+            </div>
+
+            <!-- Technical Pipeline Stages -->
+            <div class="project-workflow-summary">
+              <div class="workflow-title">Technical Workflow:</div>
+              <div class="workflow-tags-grid">
+                <span class="wf-pill">Data Cleaning</span>
+                <span class="wf-pill">Exploratory Analysis</span>
+                <span class="wf-pill">Feature Engineering</span>
+                <span class="wf-pill">Model Training</span>
+                <span class="wf-pill">Algorithm Comparison</span>
+                <span class="wf-pill">Evaluation Metrics</span>
+                <span class="wf-pill">Hyperparameter Tuning</span>
+                <span class="wf-pill">Streamlit Deployment</span>
+              </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm btn-open-modal" data-modal="customer-satisfaction">
+                <span>View Project Details</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </button>
+              <div class="external-links-row">
+                <a href="#contact" class="btn btn-outline btn-sm gh-link-anchor" title="View Code Repository" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm demo-link-anchor" title="Launch Streamlit Live App" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Uber Trip Duration & Fare Prediction (Multi-Stage System) -->
+          <article class="project-card featured-architecture-card" data-project="uber-multistage">
+            <div class="project-card-header">
+              <div class="project-badge-row">
+                <span class="project-cat-badge">Multi-Stage ML System</span>
+                <span class="project-status-badge architecture-highlight">Sequential Architecture</span>
+              </div>
+              <h3 class="project-title">Uber Trip Duration & Fare Prediction</h3>
+              <p class="project-tagline">A chained regression system that first estimates trip duration and cascades the predicted duration as a core feature for accurate upfront fare estimation.</p>
+            </div>
+
+            <!-- Multi-Stage Visual Architecture Box -->
+            <div class="multistage-diagram-box">
+              <div class="diag-header">
+                <span class="diag-title">Multi-Stage Architecture Flow</span>
+                <span class="diag-status">Sequential ML Pipeline</span>
+              </div>
+              <div class="architecture-steps-horizontal">
+                <div class="arch-block">
+                  <span class="arch-type">Input</span>
+                  <span class="arch-label">Trip Raw Features</span>
+                  <span class="arch-sub">Distance, Location, Timestamp</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-block model-block">
+                  <span class="arch-type">Stage 1 Model</span>
+                  <span class="arch-label">Duration Prediction</span>
+                  <span class="arch-sub">Trained Regressor</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-block feature-block">
+                  <span class="arch-type">Fed Feature</span>
+                  <span class="arch-label">Predicted Duration</span>
+                  <span class="arch-sub">Dynamic Feature Input</span>
+                </div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-block model-block">
+                  <span class="arch-type">Stage 2 Model</span>
+                  <span class="arch-label">Fare Prediction</span>
+                  <span class="arch-sub">Final Output Estimator</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Pipeline Stages -->
+            <div class="project-workflow-summary">
+              <div class="workflow-title">Technical Workflow:</div>
+              <div class="workflow-tags-grid">
+                <span class="wf-pill">Data Preprocessing</span>
+                <span class="wf-pill">Feature Engineering</span>
+                <span class="wf-pill">Exploratory Analysis</span>
+                <span class="wf-pill">Model Comparison</span>
+                <span class="wf-pill">Hyperparameter Tuning</span>
+                <span class="wf-pill">Error Propagation Check</span>
+                <span class="wf-pill">Multi-Stage Pipeline</span>
+                <span class="wf-pill">Streamlit Deployment</span>
+              </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm btn-open-modal" data-modal="uber-multistage">
+                <span>View Architecture & Workflow</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </button>
+              <div class="external-links-row">
+                <a href="#contact" class="btn btn-outline btn-sm gh-link-anchor" title="View Code Repository" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm demo-link-anchor" title="Launch Streamlit Live App" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills & Practical Toolset</h2>
+          <p class="section-subtitle">Structured by operational domain, with a transparent distinction between applied core competencies and active expansion areas.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming & Data -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap programming-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="cat-title-wrap">
+                <h3>Programming & Data</h3>
+                <span class="cat-badge applied-badge">Practical Core</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <span class="chip-name">Python</span>
+                <span class="chip-level">Primary Language</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">SQL</span>
+                <span class="chip-level">Data Querying</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">Pandas</span>
+                <span class="chip-level">Data Wrangling</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">NumPy</span>
+                <span class="chip-level">Array Operations</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">Data Visualization</span>
+                <span class="chip-level">Matplotlib / Seaborn</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap ml-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <div class="cat-title-wrap">
+                <h3>Machine Learning</h3>
+                <span class="cat-badge applied-badge">Hands-On Applied</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip"><span class="chip-name">Linear Regression</span></div>
+              <div class="skill-chip"><span class="chip-name">Logistic Regression</span></div>
+              <div class="skill-chip"><span class="chip-name">KNN</span></div>
+              <div class="skill-chip"><span class="chip-name">SVM</span></div>
+              <div class="skill-chip"><span class="chip-name">Decision Trees</span></div>
+              <div class="skill-chip"><span class="chip-name">Random Forest</span></div>
+              <div class="skill-chip"><span class="chip-name">XGBoost</span></div>
+              <div class="skill-chip highlight-chip"><span class="chip-name">Model Evaluation</span></div>
+              <div class="skill-chip highlight-chip"><span class="chip-name">Hyperparameter Tuning</span></div>
+            </div>
+          </div>
+
+          <!-- Mathematics & Statistics -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap math-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+              </div>
+              <div class="cat-title-wrap">
+                <h3>Mathematics & Statistics</h3>
+                <span class="cat-badge applied-badge">Foundations</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <span class="chip-name">Statistics</span>
+                <span class="chip-level">Descriptive & Inferential</span>
+              </div>
+              <div class="skill-chip">
+                <span class="chip-name">Linear Algebra</span>
+                <span class="chip-level">Vector & Matrix Math</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap tools-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="cat-title-wrap">
+                <h3>Tools & Development</h3>
+                <span class="cat-badge applied-badge">Workflows</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip"><span class="chip-name">Git</span></div>
+              <div class="skill-chip"><span class="chip-name">GitHub</span></div>
+              <div class="skill-chip"><span class="chip-name">Streamlit</span></div>
+              <div class="skill-chip"><span class="chip-name">Object-Oriented Programming (OOP)</span></div>
+              <div class="skill-chip"><span class="chip-name">Microsoft Excel</span></div>
+            </div>
+          </div>
+
+          <!-- Currently Expanding Into (Honest & Explicitly Labeled) -->
+          <div class="skill-category-card expanding-category-card">
+            <div class="category-header">
+              <div class="cat-icon-wrap expanding-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              </div>
+              <div class="cat-title-wrap">
+                <h3>Currently Expanding Into</h3>
+                <span class="cat-badge learning-badge">Active Learning</span>
+              </div>
+            </div>
+            <p class="expanding-notice">
+              <em>Note for recruiters:</em> These represent ongoing coursework and active hands-on study through CLS Solutions and guided projects, rather than claimed senior expertise.
+            </p>
+            <div class="skill-chips-container">
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">Deep Learning</span>
+                <span class="chip-indicator">Neural Architectures</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">Computer Vision</span>
+                <span class="chip-indicator">Image Classification & Feature Maps</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">NLP</span>
+                <span class="chip-indicator">Text Processing & Embeddings</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">Generative AI</span>
+                <span class="chip-indicator">Prompt & Model Integration</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">Large Language Models (LLMs)</span>
+                <span class="chip-indicator">Fine-Tuning & Prompting</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">MLOps</span>
+                <span class="chip-indicator">Pipelines & Model Serving</span>
+              </div>
+              <div class="skill-chip expanding-chip">
+                <span class="chip-name">FastAPI</span>
+                <span class="chip-indicator">API Deployment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Professional History</span>
+          <h2 class="section-title">Commercial Experience & Business Foundation</h2>
+          <p class="section-subtitle">A real business track record that translates commercial objectives into data-driven solutions.</p>
+        </div>
+
+        <div class="experience-showcase-card">
+          <div class="exp-header-row">
+            <div class="exp-role-info">
+              <span class="exp-company-tag">Kaidoo.eg</span>
+              <h3 class="exp-role-title">E-commerce Business Owner</h3>
+              <span class="exp-meta">Egypt &bull; 2022 &ndash; 2025 (3 Years)</span>
+            </div>
+            <div class="exp-bridge-badge">
+              <span>Business Mindset ➔ Data Science</span>
+            </div>
+          </div>
+
+          <!-- Direct Responsibilities from CV -->
+          <div class="exp-content-body">
+            <h4 class="exp-subhead">Core Responsibilities & Operations:</h4>
+            <div class="responsibilities-grid">
+              <div class="resp-item">
+                <span class="bullet-check">✔</span>
+                <span><strong>End-to-End Operations:</strong> Managed product catalog, order processing pipelines, customer fulfillment, and customer service resolution.</span>
+              </div>
+              <div class="resp-item">
+                <span class="bullet-check">✔</span>
+                <span><strong>Digital Marketing & Acquisition:</strong> Planned and executed digital advertising campaigns focused on scalable customer acquisition and brand growth.</span>
+              </div>
+              <div class="resp-item">
+                <span class="bullet-check">✔</span>
+                <span><strong>Brand & Operations Governance:</strong> Managed overall brand identity, digital storefront content, vendor communications, and day-to-day business operations.</span>
+              </div>
+            </div>
+
+            <!-- The Bridge: How This Enhances Machine Learning -->
+            <div class="exp-connection-callout">
+              <div class="connection-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                <span>The Direct Advantage for Data Science & ML</span>
+              </div>
+              <p>
+                Unlike developers who build models in a vacuum, 3 years of commercial ownership taught me how real business metrics operate: <em>Customer Lifetime Value (LTV), Customer Acquisition Cost (CAC), fulfillment delay friction, and churn probability</em>. When I build predictive pipelines (like order status or customer satisfaction prediction), I structure features and evaluate errors according to business impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER JOURNEY & TIMELINE -->
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Verified Career Journey</h2>
+          <p class="section-subtitle">Chronological progression from commercial entrepreneurship to structured data science training and advanced AI engineering.</p>
+        </div>
+
+        <div class="vertical-timeline">
+          <!-- Item 1: 2022 -->
+          <div class="timeline-node">
+            <div class="node-date">2022 &ndash; 2025</div>
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-badge">Entrepreneurship</div>
+              <h4>E-commerce Business Owner &mdash; Kaidoo.eg</h4>
+              <p>Founded and managed e-commerce brand operations, order processing, and customer analytics in Egypt.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: 2025 Graduation -->
+          <div class="timeline-node">
+            <div class="node-date">2025</div>
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-badge">Academics</div>
+              <h4>Bachelor of Management and Information Systems</h4>
+              <p>Graduated from <strong>Modern Academy, Cairo, Egypt</strong>, forming the foundation of systems architecture and information theory.</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Nov 2025 - Jul 2026 -->
+          <div class="timeline-node">
+            <div class="node-date">Nov 2025 &ndash; Jul 2026</div>
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-badge">Specialization Program</div>
+              <h4>CDSP &mdash; Data Science Program | Epsilon AI Academy</h4>
+              <p>Completed intensive training in Exploratory Data Analysis, statistical modeling, machine learning algorithms, Scikit-learn, and Streamlit deployment pipelines.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Sep 2026 - Present -->
+          <div class="timeline-node active-node">
+            <div class="node-date">Sep 2026 &ndash; Present</div>
+            <div class="node-marker pulse-marker"></div>
+            <div class="node-content">
+              <div class="node-badge ongoing-badge">Currently Enrolled</div>
+              <h4>AI Engineering &mdash; Advanced Topics | CLS Solutions</h4>
+              <p>Active exploration of Deep Learning architectures, Computer Vision, NLP, Generative AI, LLMs, and MLOps principles.</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Present Target -->
+          <div class="timeline-node target-node">
+            <div class="node-date">Present</div>
+            <div class="node-marker target-marker"></div>
+            <div class="node-content">
+              <div class="node-badge target-badge">Current Position</div>
+              <h4>Junior Data Scientist / ML Engineer ➔ AI Engineering</h4>
+              <p>Applying end-to-end ML pipeline expertise to real datasets, open to Junior Data Scientist and ML Engineer roles while continuing structured progression.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Education & Specialized Programs</h2>
+          <p class="section-subtitle">Academic qualifications and verified technical academies.</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degree Card -->
+          <div class="credential-card degree-card">
+            <div class="cred-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="cred-details">
+              <span class="cred-type">Degree</span>
+              <h3>Bachelor of Management and Information Systems</h3>
+              <div class="cred-institution">Modern Academy, Cairo, Egypt</div>
+              <div class="cred-year">Graduated: 2025</div>
+              <p class="cred-desc">Provided formal education in information systems, business governance, process optimization, and database structures.</p>
+            </div>
+          </div>
+
+          <!-- Certification 1: Epsilon AI Academy -->
+          <div class="credential-card cert-card">
+            <div class="cred-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="cred-details">
+              <span class="cred-type">Comprehensive Program</span>
+              <h3>CDSP &mdash; Certified Data Science Program</h3>
+              <div class="cred-institution">Epsilon AI Academy</div>
+              <div class="cred-year">Nov 2025 &ndash; Jul 2026</div>
+              <p class="cred-desc">Rigorous curriculum covering Python, Pandas, statistical modeling, machine learning algorithms, model tuning, and end-to-end deployment.</p>
+            </div>
+          </div>
+
+          <!-- Certification 2: CLS Solutions (Ongoing) -->
+          <div class="credential-card cert-card ongoing-card">
+            <div class="cred-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="cred-details">
+              <span class="cred-type ongoing-tag">In Progress &bull; Ongoing</span>
+              <h3>AI Engineering &mdash; Advanced Topics</h3>
+              <div class="cred-institution">CLS Solutions</div>
+              <div class="cred-year">Sep 2026 &ndash; Present</div>
+              <p class="cred-desc">Advanced study program focusing on Deep Learning frameworks, Generative AI models, Prompt Engineering, Computer Vision, and MLOps lifecycles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENT LEARNING DIRECTION / ROADMAP SECTION -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning Horizon</span>
+          <h2 class="section-title">From Data to AI Engineering</h2>
+          <p class="section-subtitle">A transparent view of my progression path — demonstrating mastered foundations and active topics of study.</p>
+        </div>
+
+        <div class="roadmap-container">
+          <div class="roadmap-track">
+            <!-- Stage 1 -->
+            <div class="roadmap-step stage-mastered">
+              <div class="step-status-icon">✓</div>
+              <span class="step-num-pill">Stage 01</span>
+              <h4>Data Analysis</h4>
+              <p>Pandas, NumPy, EDA, Data Cleaning & Preprocessing</p>
+              <span class="step-status-label status-applied">Applied in Projects</span>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="roadmap-step stage-mastered">
+              <div class="step-status-icon">✓</div>
+              <span class="step-num-pill">Stage 02</span>
+              <h4>Machine Learning</h4>
+              <p>Scikit-learn, Classification, Regression, Tuning, Evaluation</p>
+              <span class="step-status-label status-applied">Applied in Projects</span>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 03</span>
+              <h4>Deep Learning</h4>
+              <p>Neural networks, loss functions, backprop, PyTorch fundamentals</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 04</span>
+              <h4>Computer Vision</h4>
+              <p>CNN architectures, image processing, spatial feature extraction</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 05</span>
+              <h4>NLP</h4>
+              <p>Text tokenization, TF-IDF, embeddings, sentiment classification</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 6 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 06</span>
+              <h4>Generative AI</h4>
+              <p>Diffusion models, prompt engineering, multimodal architectures</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 7 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 07</span>
+              <h4>LLMs</h4>
+              <p>Transformer architectures, fine-tuning, RAG frameworks</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 8 -->
+            <div class="roadmap-step stage-active">
+              <div class="step-status-icon">⚡</div>
+              <span class="step-num-pill">Stage 08</span>
+              <h4>MLOps</h4>
+              <p>Model tracking, artifact storage, automated pipelines, CI/CD for ML</p>
+              <span class="step-status-label status-learning">Active Learning</span>
+            </div>
+
+            <!-- Stage 9 Target -->
+            <div class="roadmap-step stage-target">
+              <div class="step-status-icon">🎯</div>
+              <span class="step-num-pill">Stage 09</span>
+              <h4>AI Engineering</h4>
+              <p>Production AI systems, low-latency APIs, resilient enterprise deployment</p>
+              <span class="step-status-label status-horizon">Target Goal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="section-header contact-header">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">Let's Build Something With Data & AI</h2>
+            <p class="section-subtitle">Interested in collaborating, discussing an opportunity, or talking about Data Science and AI? I'm available for Junior Data Scientist and ML Engineer roles.</p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Info Column -->
+            <div class="contact-info-panel">
+              <!-- Email Card -->
+              <div class="contact-info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Email Address</span>
+                  <a href="mailto:yousef.mansourrr2001@gmail.com" class="info-value" id="contact-email-link">yousef.mansourrr2001@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="yousef.mansourrr2001@gmail.com" title="Copy email address" aria-label="Copy email">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Phone / WhatsApp</span>
+                  <a href="tel:01154719487" class="info-value">01154719487</a>
+                </div>
+                <button class="copy-btn" data-copy="01154719487" title="Copy phone number" aria-label="Copy phone">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">El Haram, Giza, Egypt</span>
+                  <span class="info-sub">Open to onsite & remote roles</span>
+                </div>
+              </div>
+
+              <!-- Profile URL Customizer Helper (For Yousef's easy setup) -->
+              <div class="profile-links-card">
+                <div class="profile-links-header">
+                  <span class="pl-title">Connect on Professional Networks</span>
+                  <button class="btn-text-edit" id="btn-edit-socials" title="Click to update your actual GitHub & LinkedIn URLs">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <span>Edit URLs</span>
+                  </button>
+                </div>
+                <div class="profile-buttons-row">
+                  <a href="#contact" class="btn btn-outline profile-btn" id="social-github-btn" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub Profile</span>
+                  </a>
+                  <a href="#contact" class="btn btn-outline profile-btn" id="social-linkedin-btn" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn Profile</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Contact Form -->
+            <div class="contact-form-panel">
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Hiring Manager or Recruiter" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. contact@company.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Topic / Role</label>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Junior Data Scientist Role / ML Project" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="Hello Yousef, I reviewed your portfolio and would like to discuss..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-glow">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  <span>Send Message Directly</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Yousef Mansour Emam</span>
+        <span class="footer-role">Data Scientist | Machine Learning Engineer</span>
+        <span class="footer-copy">&copy; 2026 Yousef Mansour Emam. All rights reserved.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="Yousef_Mansour_Emam_CV_revised.docx" download="Yousef_Mansour_Emam_CV.docx">Download CV (.docx)</a>
+        <a href="cv.html" target="_blank">Printable CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 15-SECOND RECRUITER SCAN MODAL -->
+  <div class="modal-backdrop" id="recruiter-modal" aria-hidden="true" role="dialog" aria-labelledby="recruiter-scan-title">
+    <div class="modal-container recruiter-modal-box">
+      <button class="modal-close-btn" id="btn-close-scan" aria-label="Close Recruiter Scan Modal">&times;</button>
+      <div class="modal-header">
+        <div class="recruiter-header-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          <span>Recruiter 15-Second Executive Overview</span>
+        </div>
+        <h2 id="recruiter-scan-title">Candidate Profile: Yousef Mansour Emam</h2>
+        <p class="recruiter-target">Target Roles: <strong>Junior Data Scientist &bull; Machine Learning Engineer</strong></p>
+      </div>
+
+      <div class="modal-body recruiter-summary-grid">
+        <div class="summary-card">
+          <span class="sum-tag">1. Who He Is</span>
+          <p>Junior Data Scientist & ML Engineer based in <strong>Giza/Cairo, Egypt</strong>, with a Bachelor's in Management & Information Systems (2025) and certified training via Epsilon AI Academy.</p>
+        </div>
+
+        <div class="summary-card">
+          <span class="sum-tag">2. What He Builds</span>
+          <p>Practical, end-to-end ML pipelines: <strong>Data Preprocessing ➔ EDA ➔ Feature Engineering ➔ Model Comparison ➔ Hyperparameter Tuning ➔ Streamlit Deployment</strong>.</p>
+        </div>
+
+        <div class="summary-card">
+          <span class="sum-tag">3. Commercial Differentiator</span>
+          <p><strong>3 years of e-commerce business ownership (Kaidoo.eg)</strong>. Understands CAC, fulfillment delays, churn, and operational metrics — not just textbook algorithms.</p>
+        </div>
+
+        <div class="summary-card">
+          <span class="sum-tag">4. Ongoing Growth</span>
+          <p>Actively enrolled in <strong>AI Engineering &mdash; Advanced Topics</strong> at CLS Solutions, building deep familiarity with Deep Learning, NLP, Computer Vision, and MLOps.</p>
+        </div>
+      </div>
+
+      <div class="recruiter-key-stack">
+        <span class="stack-label">Core Tech:</span>
+        <div class="stack-pills">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>SQL</span>
+          <span>Scikit-learn</span>
+          <span>XGBoost</span>
+          <span>Streamlit</span>
+          <span>Git</span>
+        </div>
+      </div>
+
+      <div class="modal-footer recruiter-footer">
+        <a href="Yousef_Mansour_Emam_CV_revised.docx" download="Yousef_Mansour_Emam_CV.docx" class="btn btn-primary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV (.docx)</span>
+        </a>
+        <a href="cv.html" target="_blank" class="btn btn-outline btn-sm">
+          <span>View ATS Printable CV</span>
+        </a>
+        <a href="mailto:yousef.mansourrr2001@gmail.com" class="btn btn-secondary btn-sm">
+          <span>Email Yousef</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DETAILED PROJECT BREAKDOWN MODAL -->
+  <div class="modal-backdrop" id="project-detail-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-container project-detail-modal-box">
+      <button class="modal-close-btn" id="btn-close-project-modal" aria-label="Close Project Detail Modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-cat-badge" id="modal-project-cat">E-commerce ML</div>
+        <h2 id="modal-project-title">Project Title Placeholder</h2>
+        <div class="modal-tech-stack" id="modal-project-tech">Python &bull; Pandas &bull; Scikit-learn &bull; Streamlit</div>
+      </div>
+
+      <div class="modal-body project-deepdive-body" id="modal-project-content">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+
+      <div class="modal-footer project-modal-footer">
+        <a href="#contact" class="btn btn-outline btn-sm" id="modal-github-link" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub Code</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm" id="modal-demo-link" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span>Live Streamlit App</span>
+        </a>
+        <button class="btn btn-secondary btn-sm" id="modal-close-action">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL LINK CONFIGURATION MODAL (For easy personal branding setup) -->
+  <div class="modal-backdrop" id="social-edit-modal" aria-hidden="true" role="dialog" aria-labelledby="social-edit-title">
+    <div class="modal-container social-edit-modal-box">
+      <button class="modal-close-btn" id="btn-close-social-edit" aria-label="Close Social Edit Modal">&times;</button>
+      <div class="modal-header">
+        <h2 id="social-edit-title">Set Your GitHub & LinkedIn Links</h2>
+        <p class="edit-modal-desc">Paste your live profiles below so all portfolio links, code buttons, and demo anchors immediately connect to your real accounts.</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="input-github-url">GitHub Profile URL</label>
+          <input type="url" id="input-github-url" placeholder="https://github.com/your-username">
+        </div>
+        <div class="form-group">
+          <label for="input-linkedin-url">LinkedIn Profile URL</label>
+          <input type="url" id="input-linkedin-url" placeholder="https://linkedin.com/in/your-username">
+        </div>
+        <div class="form-group">
+          <label for="input-amazon-demo">Amazon Project Demo URL (Optional)</label>
+          <input type="url" id="input-amazon-demo" placeholder="https://amazon-order-prediction.streamlit.app">
+        </div>
+        <div class="form-group">
+          <label for="input-satisfaction-demo">Customer Satisfaction Demo URL (Optional)</label>
+          <input type="url" id="input-satisfaction-demo" placeholder="https://customer-satisfaction-ml.streamlit.app">
+        </div>
+        <div class="form-group">
+          <label for="input-uber-demo">Uber Multi-Stage Demo URL (Optional)</label>
+          <input type="url" id="input-uber-demo" placeholder="https://uber-trip-prediction.streamlit.app">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" id="btn-save-socials">Save Links</button>
+        <button class="btn btn-secondary btn-sm" id="btn-cancel-socials">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-notification" id="toast-notify" role="alert" aria-live="polite">
+    <span class="toast-message" id="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yousef Mansour Emam — Curriculum Vitae (ATS Print-Optimized)</title>
+  <meta name="description" content="Official Curriculum Vitae of Yousef Mansour Emam — Data Scientist & Machine Learning Engineer.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://ym320917-blip.github.io/cv.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --text-main: #111827;
+      --text-muted: #4b5563;
+      --primary: #0284c7;
+      --border: #e5e7eb;
+      --bg-page: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      line-height: 1.5;
+      padding-bottom: 3rem;
+    }
+
+    /* Print Control Bar */
+    .print-bar {
+      position: sticky;
+      top: 0;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .print-bar-info {
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .badge-ats {
+      background: #0284c7;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .print-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn-action {
+      background: #0284c7;
+      color: #ffffff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: #0369a1;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.15);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* Resume Document Container (A4 Proportions) */
+    .resume-sheet {
+      max-width: 850px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 3.5rem 3.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      border-radius: 4px;
+    }
+
+    /* Header */
+    .cv-header {
+      text-align: center;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .cv-name {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .cv-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .cv-contacts {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .cv-contacts a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .cv-contacts a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    .cv-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-heading {
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 0.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .cv-section p {
+      font-size: 0.875rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    /* Entries */
+    .cv-item {
+      margin-bottom: 1rem;
+    }
+
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .item-subtitle {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .item-date {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .cv-list {
+      list-style-type: square;
+      padding-left: 1.25rem;
+      margin-top: 0.35rem;
+    }
+
+    .cv-list li {
+      font-size: 0.85rem;
+      color: #374151;
+      line-height: 1.55;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Skills Grid */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      font-size: 0.85rem;
+    }
+
+    .skill-row {
+      display: flex;
+      line-height: 1.5;
+    }
+
+    .skill-category {
+      font-weight: 700;
+      color: #111827;
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .skill-items {
+      color: #374151;
+    }
+
+    /* Print Stylesheet Overrides */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .print-bar {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        margin: 0;
+        padding: 1.5rem 1.5rem;
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      .cv-name {
+        font-size: 1.8rem;
+      }
+
+      .cv-title {
+        font-size: 1rem;
+      }
+
+      .section-heading {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cv-section {
+        margin-bottom: 1.15rem;
+      }
+
+      .cv-list li {
+        font-size: 0.8125rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Print Bar -->
+  <div class="print-bar">
+    <div class="print-bar-info">
+      <span class="badge-ats">ATS Formatted</span>
+      <span>Yousef Mansour Emam &bull; Official CV</span>
+    </div>
+    <div class="print-actions">
+      <button class="btn-action" onclick="window.print()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span>Print / Save as PDF</span>
+      </button>
+      <a href="Yousef_Mansour_Emam_CV_revised.docx" download="Yousef_Mansour_Emam_CV.docx" class="btn-action btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download Word (.docx)</span>
+      </a>
+      <a href="index.html" class="btn-action btn-secondary">
+        <span>Back to Portfolio</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- A4 Printable Sheet -->
+  <main class="resume-sheet">
+    <header class="cv-header">
+      <h1 class="cv-name">Yousef Mansour Emam</h1>
+      <div class="cv-title">Data Scientist | Machine Learning Engineer</div>
+      <div class="cv-contacts">
+        <span>01154719487</span>
+        <span>&bull;</span>
+        <a href="mailto:yousef.mansourrr2001@gmail.com">yousef.mansourrr2001@gmail.com</a>
+        <span>&bull;</span>
+        <span>El Haram, Giza, Egypt</span>
+        <span>&bull;</span>
+        <span id="cv-linkedin-display">LinkedIn</span>
+        <span>&bull;</span>
+        <span id="cv-github-display">GitHub</span>
+      </div>
+    </header>
+
+    <!-- Career Objective -->
+    <section class="cv-section">
+      <h2 class="section-heading">Career Objective</h2>
+      <p>
+        Data Scientist / Machine Learning Engineer with hands-on experience in data analysis, machine learning, and end-to-end ML projects. Building expertise across Deep Learning, NLP, Computer Vision, Generative AI, MLOps, and FastAPI, with a focus on developing and deploying practical AI solutions.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="cv-section">
+      <h2 class="section-heading">Education</h2>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">Bachelor of Management and Information Systems</span>
+          <span class="item-date">2025</span>
+        </div>
+        <div class="item-subtitle">Modern Academy, Cairo, Egypt</div>
+      </div>
+    </section>
+
+    <!-- Certifications / Programs -->
+    <section class="cv-section">
+      <h2 class="section-heading">Certifications & Specialized Programs</h2>
+      
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">CDSP (Certified Data Science Program)</span>
+          <span class="item-date">Nov 2025 &ndash; Jul 2026</span>
+        </div>
+        <div class="item-subtitle">Epsilon AI Academy</div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">AI Engineering &mdash; Advanced Topics</span>
+          <span class="item-date">Sep 2026 &ndash; Present (Ongoing)</span>
+        </div>
+        <div class="item-subtitle">CLS Solutions</div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="cv-section">
+      <h2 class="section-heading">Experience</h2>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">E-commerce Business Owner &mdash; Kaidoo.eg</span>
+          <span class="item-date">2022 &ndash; 2025</span>
+        </div>
+        <div class="item-subtitle">Egypt</div>
+        <ul class="cv-list">
+          <li>Managed end-to-end e-commerce operations, including product management, orders, customer service, and fulfillment.</li>
+          <li>Planned and executed digital marketing campaigns focused on customer acquisition and brand growth.</li>
+          <li>Managed brand identity, content, and day-to-day business operations with a data-driven mindset.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="cv-section">
+      <h2 class="section-heading">Projects</h2>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">Amazon E-commerce Order Status Prediction</span>
+          <span class="item-date">Python | Pandas | Scikit-learn | Streamlit</span>
+        </div>
+        <ul class="cv-list">
+          <li>Developed an end-to-end ML pipeline covering data preprocessing, feature engineering, EDA, baseline modeling, model training, evaluation, and hyperparameter tuning.</li>
+          <li>Compared multiple ML algorithms, selected the best-performing model, built the final prediction pipeline, and deployed it using Streamlit.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">E-commerce Customer Satisfaction Prediction</span>
+          <span class="item-date">Python | Pandas | Scikit-learn | Streamlit</span>
+        </div>
+        <ul class="cv-list">
+          <li>Developed an end-to-end ML solution including data cleaning, feature engineering, exploratory analysis, model training, evaluation, and hyperparameter tuning.</li>
+          <li>Evaluated multiple algorithms, selected the best-performing model, and deployed the final prediction pipeline using Streamlit.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="item-title">Uber Trip Duration & Fare Prediction (Multi-Stage ML System)</span>
+          <span class="item-date">Python | Pandas | Scikit-learn | Streamlit</span>
+        </div>
+        <ul class="cv-list">
+          <li>Developed a multi-stage end-to-end ML system to predict trip duration and subsequently fare amount using the predicted duration as a dynamic feature input.</li>
+          <li>Compared multiple models, performed hyperparameter tuning and evaluation, then built and deployed the final prediction pipelines using Streamlit.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="cv-section">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-block">
+        <div class="skill-row">
+          <span class="skill-category">Programming & Data:</span>
+          <span class="skill-items">Python, SQL, Pandas, NumPy, Data Visualization</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Machine Learning:</span>
+          <span class="skill-items">Logistic Regression, Linear Regression, SVM, KNN, Decision Trees, Random Forest, XGBoost, Model Evaluation, Hyperparameter Tuning</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Mathematics & Statistics:</span>
+          <span class="skill-items">Statistics, Linear Algebra</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Tools & Development:</span>
+          <span class="skill-items">Git, GitHub, Streamlit, Object-Oriented Programming (OOP), Microsoft Excel</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Professional Skills:</span>
+          <span class="skill-items">Problem Solving, Analytical Thinking, Decision Making</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-category">Familiar With / Expanding:</span>
+          <span class="skill-items">Deep Learning, Computer Vision, NLP, Generative AI, Large Language Models (LLMs), MLOps, FastAPI</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Sync custom saved URLs if present in localStorage
+    const savedGh = localStorage.getItem('ym_github_url');
+    const savedLi = localStorage.getItem('ym_linkedin_url');
+    if (savedGh) {
+      const ghEl = document.getElementById('cv-github-display');
+      if (ghEl) ghEl.innerHTML = `<a href="${savedGh}" target="_blank">GitHub</a>`;
+    }
+    if (savedLi) {
+      const liEl = document.getElementById('cv-linkedin-display');
+      if (liEl) liEl.innerHTML = `<a href="${savedLi}" target="_blank">LinkedIn</a>`;
+    }
+  </script>
+</body>
+</html>
